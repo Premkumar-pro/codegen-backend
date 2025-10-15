@@ -8,6 +8,14 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# ---------- Gemini API Keys ----------
+GEMANI_KEYS = [
+    os.getenv("GOOGLE_GEMANI_API_1"),
+    os.getenv("GOOGLE_GEMANI_API_2"),
+    os.getenv("GOOGLE_GEMANI_API_3"),
+    os.getenv("GOOGLE_GEMANI_API_4"),
+]
+
 # ---------- Security ----------
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-default")
 DEBUG = os.getenv("DEBUG", "False").lower() in ("1", "true", "yes")

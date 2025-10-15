@@ -18,7 +18,9 @@ SUPPORTED_LANGUAGES = [
     "forth", "prolog", "ocaml", "fsharp", "vbnet",
     "bash", "powershell", "shell"
 ]
+
 # ---------------- Helper function for rotating API keys ----------------
+
 def get_working_gemini_client():
     last_exception = None
     for key in settings.GEMANI_KEYS:
